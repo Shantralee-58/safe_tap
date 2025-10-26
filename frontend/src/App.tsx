@@ -6,7 +6,6 @@ import { ReactComponent as HomeIcon } from "./icons/home.svg";
 import { ReactComponent as LocationIcon } from "./icons/location.svg";
 import { ReactComponent as PanicIcon } from "./icons/panic.svg";
 import { ReactComponent as FakeIcon } from "./icons/fake.svg";
-import { ReactComponent as RecordIcon } from "./icons/record.svg";
 
 function Header() {
   return (
@@ -46,7 +45,6 @@ function BottomNav() {
       <button className="nav-btn"><LocationIcon /></button>
       <button className="nav-btn"><PanicIcon /></button>
       <button className="nav-btn"><FakeIcon /></button>
-      <button className="nav-btn"><RecordIcon /></button>
     </nav>
   );
 }
