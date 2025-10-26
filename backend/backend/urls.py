@@ -15,8 +15,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/auth/', include('users.urls')),
+    # API endpoints for chat history, etc.
+    path('api/chat/', include('chat.urls')),
+    # API endpoints for safety services (e.g., uploading recorded files)
+    path('api/safety/', include('safety.urls')),
+    # You would define your REST API routes here
 ]
